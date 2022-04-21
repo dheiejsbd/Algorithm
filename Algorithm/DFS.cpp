@@ -102,7 +102,7 @@ void DFS(int x, int y, int l)
 	if (CanMoveLeft(x, y)) DFS(x-1, y,l+1);
 	if (CanMoveRight(x, y)) DFS(x+1, y,l+1);
 
-	map[y][x] = 1;//방문기록제거
+	map[y][x] = 1;//방문기록제거 - 이전분기점까지 돌아감
 
 	Sleep(100);
 	DrawMap();
