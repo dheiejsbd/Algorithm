@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include"Vector.h"
 #include<Windows.h>
 
 //DFS (Depth First Search) 깊이 우선 탐색
