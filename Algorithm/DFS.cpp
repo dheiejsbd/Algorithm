@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<Windows.h>
-
+#include "DFS.h"
 //DFS (Depth First Search) 깊이 우선 탐색
 //트리 전위순회
 //1. 노드를 방문
@@ -18,7 +18,7 @@
 
 // 아래의 코드는 DFS를 활용하여 최단거리를 구하는 알고리즘
 
-int map[7][7] =
+static int map[7][7]
 {
 	  {1,1,0,0,0,0,0},
 	  {0,1,1,1,1,0,0},
@@ -58,7 +58,6 @@ bool CanMoveDown(int x, int y)
 {
 	return y < mapColumn-1 && map[y + 1][x] == 1;
 }
-#pragma endregion
 void DrawMap()
 {
 	system("cls");
@@ -111,7 +110,7 @@ void DFS(int x, int y, int l)
 
 
 
-int main()
+void DFSClass::Start()
 {
 	mapRow = sizeof(map[0]) / sizeof(int);
 	mapColumn = sizeof(map) / sizeof(map[0]);
@@ -121,6 +120,4 @@ int main()
 	PrintMinDist();
 
 	DFS(0, 0, 0);
-	
-	return 0;
 }

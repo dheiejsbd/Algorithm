@@ -21,5 +21,19 @@
     <ClCompile Include="DFS.cpp">
       <Filter>소스 파일\PathFinding</Filter>
     </ClCompile>
+    <ClCompile Include="JPS.cpp">
+      <Filter>소스 파일\PathFinding</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>소스 파일\PathFinding</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DFS.h">
+      <Filter>소스 파일\PathFinding</Filter>
+    </ClInclude>
+    <ClInclude Include="JPS.h">
+      <Filter>소스 파일\PathFinding</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
